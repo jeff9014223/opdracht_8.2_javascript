@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-zinc-900">
+    <div class="w-screen h-screen flex flex-col items-center justify-center">
+        <div class="bg-zinc-800 rounded p-3 space-y-3">
+            <h1 class="text-white font-semibold text-2xl">Rekenmachine</h1>
+            <div id="result" class="bg-zinc-700 p-2 rounded text-gray-300 text-3xl font-semibold">
+                100
+            </div>
+            <div class="flex space-x-3">
+                <input type="number" id="num_1" class="text-gray-200 w-1/2 py-2 px-3 rounded bg-zinc-700" placeholder="Getal 1">
+                <input type="number" id="num_2" class="text-gray-200 w-1/2 py-2 px-3 rounded bg-zinc-700" placeholder="Getal 2">
+            </div>
+            <p id="error" class="text-red-500"></p>
+            <h2 class="text-white font-semibold text-xl">Operator</h2>
+            <div class="flex space-x-2">
+                <button onclick="multiplyNumbers()" class="bg-zinc-700 p-3 inline-flex items-center text-gray-200 rounded hover:bg-zinc-600 justify-center w-[35px] h-[35px]">X</button>
+                <button onclick="divideNumbers()" class="bg-zinc-700 p-3 inline-flex items-center text-gray-200 rounded hover:bg-zinc-600 justify-center w-[35px] h-[35px]">/</button>
+                <button onclick="addNumbers()" class="bg-zinc-700 p-3 inline-flex items-center text-gray-200 rounded hover:bg-zinc-600 justify-center w-[35px] h-[35px]">+</button>
+                <button onclick="subtractNumbers()" class="bg-zinc-700 p-3 inline-flex items-center text-gray-200 rounded hover:bg-zinc-600 justify-center w-[35px] h-[35px]">-</button>
+                <button onclick="clearNumbers()" class="bg-zinc-700 p-3 inline-flex items-center text-gray-200 rounded hover:bg-zinc-600 justify-center w-[35px] h-[35px]">CE</button>
+            </div>
+        </div>
+    </div>
+    <script src="./client.js"></script>
+</body>
+</html>
